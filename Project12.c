@@ -17,11 +17,11 @@ bool is_prime(int n)
     {
         if(n % i == 0)
         {
-            return 1;
+            return 0;
         }       
     }
 
-    return 0;
+    return 1;
 }
 
 
@@ -34,7 +34,7 @@ int main()
     for(num = 101; num <= 200; num++)
     {
         flag = is_prime(num);
-        if(flag == 0)
+        if(flag)
             printf("%d\n", num);
     }
 
